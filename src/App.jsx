@@ -18,7 +18,7 @@ import Meal from './pages/Meal';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
 
-const API = 'http://127.0.0.1:5005/api';
+const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5005/api';
 
 function App() {
   const [exercises, setExercises] = useState([]);
