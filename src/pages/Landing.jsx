@@ -34,8 +34,8 @@ const Landing = () => {
           fontWeight: '900',
           fontSize: '1.4rem'
         }}>
-          <img src="/src/images/logo.png" alt="FitTrack" style={{ width: '36px', height: '36px', borderRadius: '10px' }} />
-          FITTRACK AI
+          <img src="/logo.png" alt="FitTrack" style={{ width: '36px', height: '36px', borderRadius: '10px' }} />
+          FITTRACK
         </div>
         <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
           <Link to="/login" style={{ color: 'white', textDecoration: 'none', fontWeight: '500', opacity: 0.7 }}>About</Link>

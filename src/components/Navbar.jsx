@@ -19,7 +19,7 @@ const Navbar = ({ setIsLoggedIn, toggleSidebar }) => {
           </svg>
         </button>
         <Link to="/" className="navbar-title-link" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="/src/images/logo.png" alt="FitTrack" style={{ height: '32px', borderRadius: '8px' }} />
+          <img src="/logo.png" alt="FitTrack" style={{ height: '32px', borderRadius: '8px' }} />
           <h1 className="navbar-title">FitTrack</h1>
         </Link>
       </div>

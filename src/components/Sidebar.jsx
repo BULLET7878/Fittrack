@@ -22,8 +22,8 @@ const Sidebar = ({ isOpen, toggleSidebar, handleLogout }) => {
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <img src="/src/images/logo.png" alt="FitTrack" style={{ height: '28px', borderRadius: '6px' }} />
-                        <h2 className="text-gradient" style={{ margin: 0 }}>FitTrack AI</h2>
+                        <img src="/logo.png" alt="FitTrack" style={{ height: '28px', borderRadius: '6px' }} />
+                        <h2 className="text-gradient" style={{ margin: 0 }}>FitTrack</h2>
                     </div>
                     <button className="close-btn" onClick={toggleSidebar}>×</button>
                 </div>
