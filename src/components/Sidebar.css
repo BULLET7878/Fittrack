@@ -1,0 +1,97 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg-slate);
+    backdrop-filter: var(--glass-blur);
+    border-right: 1px solid var(--glass-border);
+    z-index: 2000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.open {
+    left: 0;
+    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1999;
+}
+
+.sidebar-header {
+    padding: 32px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: var(--transition);
+    opacity: 0.5;
+}
+
+.sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.03);
+    opacity: 0.8;
+}
+
+.sidebar-link.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    opacity: 1;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.sidebar-icon {
+    font-size: 1.25rem;
+}
+
+.sidebar-footer {
+    padding: 24px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.sidebar-logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sidebar-logout:hover {
+    background: #ef4444;
+    color: white;
+    transform: translateY(-2px);
+}
