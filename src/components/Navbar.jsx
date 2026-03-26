@@ -18,8 +18,9 @@ const Navbar = ({ setIsLoggedIn, toggleSidebar }) => {
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
-        <Link to="/" className="navbar-title-link" style={{ textDecoration: 'none' }}>
-          <h1 className="navbar-title">MYGYM</h1>
+        <Link to="/" className="navbar-title-link" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src="/src/images/logo.png" alt="FitTrack" style={{ height: '32px', borderRadius: '8px' }} />
+          <h1 className="navbar-title">FitTrack</h1>
         </Link>
       </div>
 

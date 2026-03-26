@@ -34,9 +34,7 @@ const Landing = () => {
           fontWeight: '900',
           fontSize: '1.4rem'
         }}>
-          <div style={{ width: '36px', height: '36px', background: '#3b82f6', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6.5 6.5 11 11M6.5 17.5l11-11"/></svg>
-          </div>
+          <img src="/src/images/logo.png" alt="FitTrack" style={{ width: '36px', height: '36px', borderRadius: '10px' }} />
           FITTRACK AI
         </div>
         <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
